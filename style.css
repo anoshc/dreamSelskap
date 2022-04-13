@@ -50,6 +50,7 @@ footer {
 .header-mail {
     text-decoration: none;
     color: #000;
+    font-style: italic;
 }
 
 .first-paragraph {
@@ -81,10 +82,6 @@ footer {
 .size {
     width: 300px;
     height: 300px;
-}
-
-.center-pic {
-    margin-left: 3.8%;
 }
 
 .subtitle {
@@ -138,12 +135,12 @@ address {
     color: #8cb1cf;
 }
 
-@media (max-width: 600px) {
+
+/* Media query */
+
+@media (max-width: 700px) {
     .first-paragraph {
         max-width: 400px;
-    }
-    .row {
-        gap: 0;
     }
     .footer-padding {
         display: block;
@@ -151,5 +148,35 @@ address {
     }
     .footer-info:nth-child(even) {
         margin: 30px 0;
+    }
+    .row {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-text {
+        padding-bottom: 0;
+    }
+    .padding-bottom {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .first-paragraph {
+        max-width: 510px;
+    }
+    .img-text {
+        padding-bottom: 0;
+    }
+    .img-text:nth-child(3) {
+        padding-bottom: 50px;
+    }
+    .footer-info:nth-child(even) {
+        margin: 30px 0;
+    }
+    .footer-padding {
+        display: block;
+        padding: 20px;
     }
 }
